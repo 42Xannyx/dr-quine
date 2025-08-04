@@ -19,7 +19,7 @@ run:
 	@echo "Executing the run command as requested..."
 	$(CC) $(CFLAGS) -o $(TARGET) $(SOURCES)
 	@echo "Running $(TARGET) and comparing output with $(SOURCES)..."
-	./$(TARGET) > $(TMP_OUTPUT) ; echo "" >> $(TMP_OUTPUT)
+	./$(TARGET) > $(TMP_OUTPUT)
 	diff $(TMP_OUTPUT) $(SOURCES)
 	@rm -f $(TMP_OUTPUT)
 	@echo "Verification successful: Output matches source code."
