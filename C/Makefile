@@ -6,6 +6,8 @@ SULLY = Sully
 COLLEEN = Colleen
 TMP_OUTPUT_COLLEEN = tmp_$(COLLEEN)
 
+all: sully grace colleen
+
 sully:
 	@echo "Executing the run command as requested..."
 	$(CC) $(CFLAGS) -o $(SULLY) Sully.c
