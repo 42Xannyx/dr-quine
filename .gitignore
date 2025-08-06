@@ -1,6 +1,13 @@
 # Misc
-C/Colleen/Colleen
-C/Grace/Grace
+C/Sully
+C/Sully_*
+C/Colleen
+C/Grace
+
+ASM/Sully
+ASM/Sully_*
+ASM/Colleen
+ASM/Grace
 
 # Prerequisites
 *.d
