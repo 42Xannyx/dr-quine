@@ -47,4 +47,11 @@ clean:
 	@echo "Cleaning up..."
 	$(RM) $(TARGETS) *.o $(COLLEEN_TMP_OUT)
 
+fclean: clean
+	@echo "Cleaning up..."
+	$(RM) Sully_0.s Sully_1.s Sully_2.s Sully_3.s Sully_4.s Sully_5.s
+	$(RM) Sully_0 Sully_1 Sully_2 Sully_3 Sully_4 Sully_5
+
+re: fclean all
+
 .PHONY: all clean run-colleen test-colleen
